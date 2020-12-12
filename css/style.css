@@ -206,6 +206,10 @@ button {
   background-color: #F5F5F5;
 }
 
+.header__description {
+  color: #5A5A5A;
+}
+
 .nav__link {
   color: #0A0302;
   margin: 0px 36px;
@@ -297,6 +301,10 @@ button {
   margin-bottom: 48px;
 }
 
+.main__description span {
+  font-weight: 500;
+}
+
 .main__note {
   color: #969696;
   font-size: 18px;
@@ -373,6 +381,7 @@ button {
   .title {
     font-size: 42px;
     line-height: 118%;
+    text-align: start;
   }
 
   .header__nav {
@@ -458,12 +467,8 @@ button {
     font-size: 30px;
   }
 
-  .btn {
-    font-size: 16px;
-  }
-
   .main__img {
-    width: 96%;
+    width: 95%;
   }
 
   .main__description {
@@ -473,6 +478,7 @@ button {
 
   .main__note {
     font-size: 15px;
+    text-align: initial;
   }
 
   .mobile__menu {
@@ -504,6 +510,7 @@ button {
     font-size: 14px;
     line-height: 127%;
     margin-bottom: 25px;
+    text-align: initial;
   }
 }
 
@@ -535,13 +542,9 @@ button {
     margin-bottom: 20px;
   }
 
-  .main__img {
-    width: 66%;
-  }
-
   .main__left {
     width: 100%;
-    text-align: start;
+    text-align: center;
   }
 
   .tasks__title {
@@ -612,10 +615,6 @@ button {
     height: 40px;
   }
 
-  .main__img {
-    width: 63%;
-  }
-
   .main__description {
     font-size: 16px;
     line-height: 120%;
@@ -655,7 +654,7 @@ button {
   }
 
   .btn {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 140%;
   }
 
@@ -686,21 +685,12 @@ button {
   }
 
   .btn {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 94%;
   }
 
   .main {
     padding-top: 9px;
-  }
-
-  .main__img {
-    width: 44%;
-  }
-
-  .main__description {
-    font-size: 12px;
-    margin-bottom: 14px;
   }
 
   .main__note {
