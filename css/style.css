@@ -781,7 +781,7 @@ button {
 }
 
 .get-offer {
-  padding-bottom: 200px;
+  padding-bottom: 152px;
   background-image: url(./../img/get_offer_bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -953,6 +953,24 @@ button {
   border: 1.5px solid #0A0207;
 }
 
+.footer {
+  background-color: #2D2D2D;
+  padding: 28px 0;
+}
+
+.footer .nav__link {
+  color: #fff;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #969696;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+
 @media (max-width: 1440px) {
   .container {
     max-width: 1280px;
@@ -1110,6 +1128,44 @@ button {
 
   .get-offer__form-group {
     width: 100%;
+  }
+
+  .get-offer {
+    padding-bottom: 48px;
+  }
+
+  .footer .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .nav__link {
+    margin: 0;
+    margin-bottom: 16px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .footer .nav__link:hover::after {
+    bottom: 5px;
+  }
+
+  .footer .mobile__menu span {
+    background-color: #fff;
+  }
+
+  .footer .mobile__menu span::before {
+    background-color: #fff;
+  }
+
+  .footer .mobile__menu span::after {
+    background-color: #fff;
   }
 }
 
