@@ -447,6 +447,7 @@ button {
   font-weight: 700;
   font-size: 20px;
   display: block;
+  margin-bottom: 20px;
 }
 
 .slider__body-order {
