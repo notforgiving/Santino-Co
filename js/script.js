@@ -67,3 +67,9 @@ arrowleft.addEventListener("click", () => {
   }
   active -= 1;
 });
+
+document.querySelector('.header__call-btn').addEventListener('click',()=>{
+  document.querySelector('.header__call-phone-block').classList.toggle('show')
+})
+
+

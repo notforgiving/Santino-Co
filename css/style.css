@@ -255,6 +255,7 @@ button {
   -o-transition: 0.2s;
   transition: 0.2s;
   border-radius: 6px;
+  position: relative;
 }
 
 .header__call-btn:hover {
@@ -265,6 +266,58 @@ button {
 
 .header__call-btn .mobile__menu {
   display: none;
+}
+
+.header__call-phone-block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 1px 3px 0px #ed4e31;
+          box-shadow: -1px 1px 3px 0px #ed4e31;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+
+.header__call-phone-block a {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 23px;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 2.2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ed4e31;
+}
+
+.show {
+  display: block;
+}
+
+.show a {
+  font-size: 16px;
 }
 
 .main {
@@ -447,7 +500,6 @@ button {
   font-weight: 700;
   font-size: 20px;
   display: block;
-  margin-bottom: 20px;
 }
 
 .slider__body-order {
@@ -497,6 +549,24 @@ button {
 
 .slider__body-no-active {
   display: none;
+}
+
+.slider__body-description-img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.slider__body-description-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
 }
 
 .service {
@@ -797,6 +867,7 @@ button {
   background-position: center center;
   background-size: 90%;
   padding-top: 72px;
+  position: relative;
 }
 
 .get-offer__wrapper {
@@ -963,6 +1034,30 @@ button {
   border: 1.5px solid #0A0207;
 }
 
+.get-offer__call {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 47px;
+  bottom: 47px;
+  background-image: url(./../img/phone.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 6px rgba(89, 85, 85, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.4), inset 0px 2px 2px rgba(150, 150, 150, 0.1);
+          box-shadow: 3px 3px 6px rgba(89, 85, 85, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.4), inset 0px 2px 2px rgba(150, 150, 150, 0.1);
+  opacity: 0.8;
+}
+
+.get-offer__call:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .footer {
   background-color: #2D2D2D;
   padding: 28px 0;
@@ -1027,6 +1122,12 @@ button {
   .title {
     font-size: 42px;
     line-height: 118%;
+  }
+
+  .header__call-phone-block {
+    bottom: -200%;
+    width: auto;
+    left: -200%;
   }
 
   .header__nav {
@@ -1238,6 +1339,10 @@ button {
   .casess {
     padding-top: 180px;
   }
+
+  .get-offer__call {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1304,6 +1409,7 @@ button {
     position: absolute;
     left: 180px;
     bottom: 43%;
+    z-index: 10;
   }
 
   .slider__arrow-right {
@@ -1311,6 +1417,7 @@ button {
     position: absolute;
     right: 180px;
     bottom: 43%;
+    z-index: 10;
   }
 
   .form-group__item-group {
@@ -1359,6 +1466,10 @@ button {
     text-align: center;
   }
 
+  .show a {
+    font-size: 16px;
+  }
+
   .tasks__title {
     margin-bottom: 40px;
   }
@@ -1394,7 +1505,7 @@ button {
   }
 
   .slider__body-order {
-    top: -165%;
+    top: -158%;
   }
 
   .slider__arrow-left {
@@ -1406,7 +1517,7 @@ button {
   }
 
   .slider__body-order {
-    top: -177%;
+    top: -155%;
   }
 
   .service__title {
