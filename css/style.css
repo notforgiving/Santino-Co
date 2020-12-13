@@ -296,6 +296,7 @@ button {
   -o-transition: 0.5s;
   transition: 0.5s;
   display: none;
+  visibility: hidden;
 }
 
 .header__call-phone-block a {
@@ -318,6 +319,7 @@ button {
 
 .show {
   display: block;
+  visibility: visible;
 }
 
 .show a {
