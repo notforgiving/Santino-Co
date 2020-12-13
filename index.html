@@ -17,10 +17,10 @@
       /></a>
       <div class="header__menu">
         <nav class="header__nav">
-          <a href="#" class="nav__link">Услуги</a>
-          <a href="#" class="nav__link">Кейсы</a>
-          <a href="#" class="nav__link">О Нас</a>
-          <a href="#" class="nav__link">Контакты</a>
+          <a href="#service" class="nav__link">Услуги</a>
+          <a href="#casess" class="nav__link">Кейсы</a>
+          <a href="#about-us" class="nav__link">О Нас</a>
+          <a href="#footer" class="nav__link">Контакты</a>
         </nav>
         <button
           class="header__call-btn"
@@ -48,7 +48,9 @@
           <span>Google AdWords.</span>
         </p>
         <p class="main__note">*Первые заявки уже сегодня!</p>
-        <button class="main__btn btn">Получить предложение</button>
+        <button onclick="location.href = '#get-offer'" class="main__btn btn">
+          Получить предложение
+        </button>
       </div>
       <div class="main__right">
         <img class="main__img" src="./img/get_offer.png" alt="main image" />
@@ -96,7 +98,7 @@
   </div>
 </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
   <div class="container">
     <div class="about-us__wrapper">
       <h1 class="about-us__title title">О Нас</h1>
@@ -240,7 +242,7 @@
   </div>
 </section>
 
-    <section class="service">
+    <section class="service" id="service">
   <div class="container">
     <h1 class="service__title title">услуги</h1>
     <div class="service__row">
@@ -381,12 +383,12 @@
       </div>
     </div>
     <div class="service__group">
-      <button class="service__btn btn">Получить предложение</button>
+      <button onclick="location.href = '#get-offer'" class="service__btn btn">Получить предложение</button>
     </div>
   </div>
 </section>
 
-    <section class="casess">
+    <section class="casess" id="casess">
   <div class="container">
     <div class="casess__wrapper">
       <div class="casess__left">
@@ -501,7 +503,7 @@
   </div>
 </section>
 
-    <section class="get-offer">
+    <section class="get-offer" id="get-offer">
   <div class="container">
     <div class="get-offer__wrapper">
       <h1 class="get-offer__title title">Получить предложение</h1>
@@ -551,7 +553,7 @@
   </div>
 </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container">
     <div class="header__wrapper">
       <a href="#"
