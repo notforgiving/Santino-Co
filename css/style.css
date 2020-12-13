@@ -421,7 +421,7 @@ button {
 }
 
 .slider__body-main {
-  padding: 172px 74px;
+  padding: 13% 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +444,9 @@ button {
 }
 
 .slider__body-description span {
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
 }
 
 .slider__body-order {
@@ -1004,7 +1006,7 @@ button {
   }
 
   .slider__body-main {
-    padding: 136px 74px;
+    padding: 11% 6%;
   }
 
   .service__col-subtitle {
@@ -1224,10 +1226,6 @@ button {
     font-size: 16px;
   }
 
-  .slider__body-description span {
-    font-weight: normal;
-  }
-
   .about-us__title {
     text-align: center;
   }
@@ -1284,11 +1282,12 @@ button {
   .slider__body-main {
     padding: 38px 17px;
     width: 57%;
+    min-height: 280px;
   }
 
   .slider__body-order {
     right: 0;
-    top: -187%;
+    top: -165%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1303,14 +1302,14 @@ button {
     height: 28px;
     position: absolute;
     left: 180px;
-    bottom: 213px;
+    bottom: 43%;
   }
 
   .slider__arrow-right {
     height: 28px;
     position: absolute;
     right: 180px;
-    bottom: 213px;
+    bottom: 43%;
   }
 
   .form-group__item-group {
@@ -1393,14 +1392,16 @@ button {
     text-align: center;
   }
 
+  .slider__body-order {
+    top: -165%;
+  }
+
   .slider__arrow-left {
     left: 98px;
-    bottom: 273px;
   }
 
   .slider__arrow-right {
     right: 98px;
-    bottom: 273px;
   }
 
   .slider__body-order {
@@ -1505,21 +1506,26 @@ button {
   .slider__arrow-left {
     height: 22px;
     left: 56px;
-    bottom: 287px;
+    bottom: 45%;
   }
 
   .slider__arrow-right {
     height: 22px;
     right: 56px;
-    bottom: 287px;
+    bottom: 45%;
   }
 
   .slider__body-order {
-    top: -179%;
+    top: -159%;
   }
 
   .slider__body-description {
     font-size: 16px;
+    text-align: initial;
+  }
+
+  .slider__body-main {
+    width: 70%;
   }
 
   .service__col-subtitle {
@@ -1652,6 +1658,26 @@ button {
     width: 79%;
   }
 
+  .order-active {
+    font-size: 24px;
+    line-height: 155%;
+    margin-right: 16px;
+  }
+
+  .order-end {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 155%;
+  }
+
+  .order-line {
+    margin-right: 16px;
+  }
+
+  .slider__body-order {
+    top: -152%;
+  }
+
   .service__row {
     margin-bottom: 40px;
   }
@@ -1735,33 +1761,17 @@ button {
   .slider__arrow-left {
     height: 18px;
     left: 40px;
-    bottom: 234px;
+    bottom: 52%;
   }
 
   .slider__arrow-right {
     height: 18px;
     right: 40px;
-    bottom: 234px;
-  }
-
-  .order-active {
-    font-size: 24px;
-    line-height: 155%;
-    margin-right: 16px;
-  }
-
-  .order-end {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 155%;
-  }
-
-  .order-line {
-    margin-right: 16px;
+    bottom: 52%;
   }
 
   .slider__body-order {
-    top: -182%;
+    top: -162%;
   }
 
   .slider__body-description {
