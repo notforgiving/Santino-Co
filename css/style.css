@@ -780,6 +780,179 @@ button {
   letter-spacing: 0.02em;
 }
 
+.get-offer {
+  padding-bottom: 200px;
+  background-image: url(./../img/get_offer_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+  padding-top: 72px;
+}
+
+.get-offer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.get-offer__title {
+  margin-bottom: 40px;
+}
+
+.get-offer__form-group {
+  background: #F17F6A;
+  -webkit-box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.05), inset 0px 0px 2px rgba(1, 1, 1, 0.1);
+          box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.05), inset 0px 0px 2px rgba(1, 1, 1, 0.1);
+  border-radius: 2px;
+  padding: 30px 189px 40px 189px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 67%;
+}
+
+.form-group__title {
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FDFDFD;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.form-group__item-group {
+  width: 463px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group__input-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #2D2D2D;
+  margin-bottom: 8px;
+}
+
+.form-group__input-label span {
+  color: #ED2B09;
+}
+
+.form-group__input {
+  background: #FFFFFF;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  height: 53px;
+  padding-left: 16px;
+  border: none;
+}
+
+.form-group__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #969696;
+}
+
+.form-group__input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #969696;
+}
+
+.form-group__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #969696;
+}
+
+.form-group__input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #969696;
+}
+
+.form-group__input::placeholder {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  color: #969696;
+}
+
+.form-group__note {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #68463F;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  width: 463px;
+}
+
+.form-group__note-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #68463F;
+  text-decoration: underline;
+}
+
+.form-group__btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FDFDFD;
+  padding: 18px 157px;
+  border: 1.5px solid #FDFDFD;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-group__btn:hover {
+  background: #ED4E31;
+  border: 1.5px solid #ED4E31;
+}
+
+.form-group__btn:active {
+  background: #0A0207;
+  border: 1.5px solid #0A0207;
+}
+
 @media (max-width: 1440px) {
   .container {
     max-width: 1280px;
@@ -934,6 +1107,10 @@ button {
   .controls__subtitle {
     text-align: center;
   }
+
+  .get-offer__form-group {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1072,6 +1249,18 @@ button {
     right: 180px;
     bottom: 213px;
   }
+
+  .form-group__item-group {
+    width: 100%;
+  }
+
+  .get-offer__form-group {
+    padding: 30px 78px 40px 78px;
+  }
+
+  .form-group__note {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1161,6 +1350,24 @@ button {
 
   .controls__table-content-item {
     padding-right: 10px;
+  }
+
+  .form-group__btn {
+    padding: 18px 118px;
+  }
+
+  .form-group__title {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .form-group__input-label {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .form-group__input {
+    height: 44px;
   }
 }
 
@@ -1319,6 +1526,50 @@ button {
     font-size: 20px;
     line-height: 130%;
   }
+
+  .get-offer {
+    background-position: -27% -12%;
+    background-size: auto;
+    padding-top: 101px;
+  }
+
+  .get-offer__form-group {
+    padding: 32px 16px;
+  }
+
+  .form-group__btn {
+    padding: 18px 107px;
+  }
+
+  .form-group__input::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .form-group__input::-moz-placeholder {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .form-group__input:-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .form-group__input::-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .form-group__input::placeholder {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .form-group__note {
+    font-size: 14px;
+    line-height: 120%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1374,11 +1625,15 @@ button {
   .controls__max {
     margin-right: 20px;
   }
+
+  .form-group__btn {
+    padding: 18px 83px;
+  }
 }
 
 @media (max-width: 375px) {
   .container {
-    max-width: 320px;
+    max-width: 335px;
   }
 
   .title {
@@ -1470,13 +1725,25 @@ button {
   .content__position {
     font-size: 13px;
   }
+
+  .form-group__btn {
+    padding: 18px 60px;
+  }
+
+  .form-group__btn {
+    font-size: 16px;
+    line-height: 140%;
+    padding: 18px 75px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 335px) {
   .container {
     max-width: 320px;
   }
+}
 
+@media (max-width: 320px) {
   .title {
     font-size: 21px;
     line-height: 107%;
@@ -1513,5 +1780,9 @@ button {
 
   .slider__body-order {
     top: -156%;
+  }
+
+  .form-group__btn {
+    padding: 18px 66px;
   }
 }
