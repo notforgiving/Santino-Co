@@ -1,0 +1,222 @@
+.about-us
+  padding-bottom: 180px
+  background-image: url(./../img/about_bg.png)
+  background-repeat: no-repeat
+  background-position: right top
+  padding-top: 202px
+  background-size: 7%
+  &__wrapper
+  &__title
+    text-align: center
+    margin-bottom: 30px
+  &__slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+.slider__arrow-left
+  height: 48px
+  margin-right: 60px
+  cursor: pointer
+.slider__body
+  display: flex
+  align-items: center
+  transition: 0.5s
+  &-img
+    width: 243px
+    &-wrapper
+      background: #FFFFFF
+      box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.05), inset 0px 0px 2px rgba(1, 1, 1, 0.2)
+      border-radius: 2px
+      padding: 118px 109px
+  &-main
+    // padding: 172px 74px
+    padding: 13% 7%
+    display: flex
+    align-items: center
+    background: #F9F9F9
+    box-shadow: inset 0px 0px 2px rgba(1, 1, 1, 0.05)
+    border-radius: 2px
+    text-align: center
+    position: relative
+  &-description
+    font-size: 18px
+    line-height: 140%
+    letter-spacing: 0.02em
+    color: #5A5A5A
+    span
+      font-weight: 700
+      font-size: 20px
+      display: block
+
+  &-order
+    position: absolute
+    right: 0
+    bottom: -50px
+    display: flex
+    align-items: center
+.order-active
+  font-weight: bold
+  font-size: 32px
+  line-height: 130%
+  letter-spacing: 0.02em
+  text-transform: uppercase
+  color: #F17A65
+  margin-right: 24px
+  cursor: pointer
+.order-line
+  display: inline-block
+  background: #0A0302
+  height: 2px
+  width: 120px
+  margin-right: 32px
+.order-end
+  font-size: 21px
+  line-height: 130%
+  letter-spacing: 0.02em
+  text-transform: uppercase
+  color: #969696
+.slider__arrow-right
+  height: 48px
+  margin-left: 60px
+  cursor: pointer
+
+.slider__body-no-active
+  display: none
+.slider__body-description-img
+  width: 30px
+  margin-right: 20px
+.slider__body-description-header
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 20px
+@media (max-width:1440px)
+  .slider__arrow-left
+    height: 38px
+  .slider__arrow-right
+    height: 38px
+  .slider__body-img
+    width: 200px
+  .slider__body-img-wrapper
+    padding: 98px 73px
+  .slider__body-main
+    // padding: 136px 74px
+    padding: 11% 6%
+@media (max-width:1280px)
+@media (max-width:1024px)
+  .about-us__title
+    text-align: center
+@media (max-width:960px)
+  .slider__body-img-wrapper
+    padding: 75px 84px
+  .about-us
+    padding-top: 174px
+    background-size: 11%
+  .slider__body-img
+    width: 282px
+  .about-us__slider
+    position: relative
+  .slider__body
+    flex-direction: column
+  .slider__body-main
+    padding: 38px 17px
+    width: 57%
+    min-height: 280px
+  .slider__body-order
+    right: 0
+    top: -165%
+    justify-content: center
+    left: 0
+  .order-line
+    width: 72px
+  .slider__arrow-left
+    height: 28px
+    position: absolute
+    left: 180px
+    bottom: 43%
+    z-index: 10
+  .slider__arrow-right
+    height: 28px
+    position: absolute
+    right: 180px
+    bottom: 43%
+    z-index: 10
+@media (max-width:768px)
+  .about-us__title
+    text-align: center
+  .slider__body-order
+    top: -158%
+  .slider__arrow-left
+    left: 98px
+  .slider__arrow-right
+    right: 98px
+  .slider__body-order
+    top: -155%
+@media (max-width:576px)
+  .about-us
+    padding-top: 168px
+    background-position: right -10px
+    background-size: 14%
+  .slider__body-img
+    width: 249px
+  .slider__body-img-wrapper
+    padding: 70px 63px
+  .slider__arrow-left
+    height: 22px
+    left: 56px
+    bottom: 45%
+  .slider__arrow-right
+    height: 22px
+    right: 56px
+    bottom: 45%
+  .slider__body-order
+    top: -159%
+  .slider__body-description
+    font-size: 16px
+    text-align: initial
+  .slider__body-main
+    width: 70%
+@media (max-width:420px)
+  .slider__body-img
+    width: 231px
+  .slider__body-main
+    width: 79%
+  .order-active
+    font-size: 24px
+    line-height: 155%
+    margin-right: 16px
+  .order-end
+    font-weight: normal
+    font-size: 16px
+    line-height: 155%
+  .order-line
+    margin-right: 16px
+  .slider__body-order
+    top: -152%
+
+@media (max-width:375px)
+  .slider__body-img
+    width: 179px
+  .about-us
+    padding-top: 110px
+  .slider__arrow-left
+    height: 18px
+    left: 40px
+    bottom: 52%
+  .slider__arrow-right
+    height: 18px
+    right: 40px
+    bottom: 52%
+  .slider__body-order
+    top: -159%
+
+  .slider__body-description
+    font-size: 16px
+    line-height: 120%
+  .about-us
+    background-size: 15%
+@media (max-width:320px)
+  .slider__body-img
+    width: 172px
+  .slider__body-order
+    top: -156%

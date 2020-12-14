@@ -1,0 +1,162 @@
+.get-offer
+  padding-bottom: 152px
+  background-image: url(./../img/get_offer_bg.png)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 90%
+  padding-top: 72px
+  position: relative
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &__title
+    margin-bottom: 40px
+  &__form-group
+    background: #F17F6A
+    box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.05), inset 0px 0px 2px rgba(1, 1, 1, 0.1)
+    border-radius: 2px
+    padding: 30px 189px 40px 189px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 67%
+.form-group__title
+  font-size: 24px
+  line-height: 130%
+  text-align: center
+  letter-spacing: 0.02em
+  color: #FDFDFD
+  font-weight: normal
+  margin-bottom: 24px
+.form-group__item-group
+  width: 463px
+  display: flex
+  flex-direction: column
+  margin-bottom: 16px
+.form-group__input-label
+  font-weight: 600
+  font-size: 18px
+  line-height: 130%
+  letter-spacing: 0.02em
+  color: #2D2D2D
+  margin-bottom: 8px
+  span
+    color: #ED2B09
+.form-group__input
+  background: #FFFFFF
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1)
+  border-radius: 2px
+  height: 53px
+  padding-left: 16px
+  border: none
+  &::placeholder
+    font-size: 16px
+    line-height: 155%
+    letter-spacing: 0.02em
+    color: #969696
+.form-group__note
+  font-size: 16px
+  line-height: 140%
+  letter-spacing: 0.02em
+  color: #68463F
+  margin-top: 32px
+  margin-bottom: 24px
+  width: 463px
+  &-link
+    font-weight: 500
+    font-size: 16px
+    color: #68463F
+    text-decoration: underline
+.form-group__btn
+  font-weight: bold
+  font-size: 18px
+  line-height: 140%
+  letter-spacing: 0.02em
+  text-transform: uppercase
+  color: #FDFDFD
+  padding: 18px 157px
+  border: 1.5px solid #FDFDFD
+  border-radius: 2px
+  transition: 0.3s
+  &:hover
+    background: #ED4E31
+    border: 1.5px solid #ED4E31
+  &:active
+    background: #0A0207
+    border: 1.5px solid #0A0207
+.get-offer__call
+  width: 64px
+  height: 64px
+  position: absolute
+  right: -47px
+  bottom: 47px
+  background-image: url(./../img/phone.png)
+  background-size: 60%
+  background-repeat: no-repeat
+  background-position: center center
+  cursor: pointer
+  border-radius: 50%
+  box-shadow: 3px 3px 6px rgba(89, 85, 85, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.4), inset 0px 2px 2px rgba(150, 150, 150, 0.1)
+  opacity: 0.8
+  &:hover
+    opacity: 1
+    transform: scale(1.1)
+@media (max-width:1440px)
+@media (max-width:1280px)
+  .get-offer__form-group
+    width: 100%
+  .get-offer
+    padding-bottom: 48px
+@media (max-width:1024px)
+  .get-offer__call
+    display: none
+@media (max-width:960px)
+  .form-group__item-group
+    width: 100%
+  .get-offer__form-group
+    padding: 30px 78px 40px 78px
+  .form-group__note
+    width: 100%
+@media (max-width:768px)
+  .form-group__btn
+    padding: 18px 118px
+  .form-group__title
+    font-size: 16px
+    line-height: 120%
+  .form-group__input-label
+    font-size: 16px
+    line-height: 130%
+  .form-group__input
+    height: 44px
+@media (max-width:576px)
+  .get-offer
+    background-position: -27% -12%
+    background-size: auto
+    padding-top: 101px
+  .get-offer__form-group
+    padding: 32px 16px
+  .form-group__btn
+    padding: 18px 107px
+  .form-group__input
+    &::placeholder
+      font-size: 13px
+      line-height: 120%
+  .form-group__note
+    font-size: 14px
+    line-height: 120%
+@media (max-width:420px)
+  .form-group__btn
+    padding: 18px 83px
+@media (max-width:375px)
+  .form-group__btn
+    padding: 18px 60px
+  .form-group__btn
+    font-size: 16px
+    line-height: 140%
+    padding: 18px 75px
+@media (max-width:320px)
+  .form-group__btn
+    padding: 18px 66px
