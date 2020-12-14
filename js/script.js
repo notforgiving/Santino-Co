@@ -114,3 +114,19 @@ document.querySelector('#footer_menu').addEventListener('click',()=>{
   console.log('click')
   bottomNav.classList.toggle('header__nav__show')
 })
+
+
+const img_call = document.querySelectorAll('.header__call-btn')
+
+img_call.forEach(item=>{
+  item.addEventListener('mouseenter',(e)=>{
+    console.log('mousedown')
+    item.querySelector('.call-btn__img').src="./img/phone-hover.png"
+  })
+  item.addEventListener('mouseleave',(e)=>{
+    console.log('mouseout')
+    item.querySelector('.call-btn__img').src="./img/phone.png"
+  })
+})
+
+

@@ -246,27 +246,41 @@ button {
   z-index: -1;
 }
 
+.call-btn__img {
+  margin-right: 10px;
+}
+
 .header__call-btn {
   border: 1.5px solid #ED4E31;
   border-radius: 2px;
   color: #ED4E31;
   font-weight: 500;
   font-size: 18px;
-  padding: 21px 18px 21px 65px;
-  background-image: url(./../img/phone.png);
-  background-repeat: no-repeat;
-  background-position: 20px center;
+  padding: 18px 16px 18px 16px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
   border-radius: 6px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__call-btn:hover {
-  background-color: #ED4E31;
+  background-color: #ed4e31;
   color: #F5F5F5;
-  background-image: url(./../img/phone-hover.png);
+}
+
+.header__call-btn:active {
+  background-color: #0a0207;
+}
+
+.header__call-btn:visited {
+  background-color: transparent;
 }
 
 .header .mobile-menu {
@@ -978,8 +992,7 @@ button {
   }
 
   .header__call-btn {
-    padding: 24px 5px 18px 44px;
-    background-position: center center;
+    padding: 7px 2px 7px 10px;
   }
 
   .header__call-btn span {
