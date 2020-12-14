@@ -77,9 +77,14 @@ arrowleft.addEventListener("click", () => {
   active -= 1;
 });
 
-document.querySelector(".header__call-btn").addEventListener("click", () => {
-  document.querySelector(".header__call-phone-block").classList.toggle("show");
-});
+
+const callBTN = document.querySelectorAll(".header__call-btn") 
+callBTN.forEach(item=>{
+  item.addEventListener("click", () => {
+    item.querySelector(".header__call-phone-block").classList.toggle("show");
+  });
+})
+
 
 
 const footer = document.querySelector('#footer')
