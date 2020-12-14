@@ -18,19 +18,21 @@
       <div class="header__menu">
         <nav class="header__nav">
           <a href="#service" class="nav__link">Услуги</a>
-          <a href="#casess" class="nav__link">Кейсы</a>
           <a href="#about-us" class="nav__link">О Нас</a>
           <a href="#footer" class="nav__link">Контакты</a>
         </nav>
-        <button
-          class="header__call-btn"
-        >
+        <button class="header__call-btn">
           <span>Показать телефон</span>
           <div class="header__call-phone-block">
             <a href="tel:+792118145213">+792118145213</a>
           </div>
         </button>
-        <div class="mobile__menu"><span></span></div>
+        <nav class="mobile-menu">
+          <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+          <label for="checkbox" class="mobile-menu__btn" id="mobile-menu__btn"
+            ><div class="mobile-menu__icon"></div
+          ></label>
+        </nav>
       </div>
     </div>
   </div>
@@ -222,7 +224,7 @@
                 <span>Даём советы</span>
               </div>
               Всегда подскажем вам о том, как увеличить прибыль с
-              помощью правок на сайте, изменениях в скриптах продаж, составлении
+              помощью правок на сайте, изменений в скриптах продаж, составлении
               коммерческих предложений и т.д.
             </div>
             <div class="slider__body-order">
@@ -247,8 +249,8 @@
     <h1 class="service__title title">услуги</h1>
     <div class="service__row">
       <div class="service__col">
-        <h2 class="service__col-subtitle">Детальная настройка</h2>
-        <h5 class="service__col-subhead">онтекстной рекламы</h5>
+        <h2 class="service__col-subtitle">Запускаем</h2>
+        <h5 class="service__col-subhead">контекстную рекламу</h5>
         <div class="service__col-list">
           <div class="list__item">
             <img
@@ -257,7 +259,7 @@
               alt="Icon Check"
             />
             <div class="list__item-description">
-              Настройка контекстной рекламы в Яндекс Директ и Google AdWords
+              Настраиваем контекстную рекламу в Яндекс Директ и Google AdWords
             </div>
           </div>
           <div class="list__item">
@@ -304,8 +306,8 @@
         </div>
       </div>
       <div class="service__col">
-        <h2 class="service__col-subtitle">Автоматизация</h2>
-        <h5 class="service__col-subhead">контекстной рекламы</h5>
+        <h2 class="service__col-subtitle">АВТОМАТИЗИРУЕМ</h2>
+        <h5 class="service__col-subhead">контекстную рекламу</h5>
         <div class="service__col-list">
           <div class="list__item">
             <img
@@ -343,8 +345,8 @@
         </div>
       </div>
       <div class="service__col">
-        <h2 class="service__col-subtitle">Настройка</h2>
-        <h5 class="service__col-subhead">сквозной аналитики</h5>
+        <h2 class="service__col-subtitle">ПОДКЛЮЧАЕМ</h2>
+        <h5 class="service__col-subhead">сквозную аналитику</h5>
         <div class="service__col-list">
           <div class="list__item">
             <img
@@ -382,127 +384,10 @@
         </div>
       </div>
     </div>
-    <div class="service__group">
-      <button onclick="location.href = '#get-offer'" class="service__btn btn">Получить предложение</button>
-    </div>
   </div>
 </section>
 
-    <section class="casess" id="casess">
-  <div class="container">
-    <div class="casess__wrapper">
-      <div class="casess__left">
-        <h1 class="casess__title title">Кейсы -<br> то, что мы делаем</h1>
-        <div class="casess__slider">
-          <a class="casess__slider-link" href="#">
-            <img
-              class="casess__slider-img"
-              src="./img/casess__slider.png"
-              alt="casess icon"
-            />
-          </a>
-          <p class="casess__slider-hote">“Пипони — самая крупная сеть пиццерий в Москве : семь кафе и точек самовывоза, собственная служба доставки.”
-          </p>
-          <div class="casess__slider-controls">
-            <img  class="controls__left"  src="./img/arrow-left.png" alt="arrow left icon"/>
-            <span class="controls__active">01</span>
-            <span class="controls__line"></span>
-            <div class="controls__max">04</div>
-            <img class="controls__right"  src="./img/arrow-right.png" alt="arrow right icon" />
-          </div>
-        </div>
-      </div>
-      <div class="casess__right">
-        <h4 class="controls__subtitle">Средние показатели за день :</h4>
-        <div class="controls__table">
-          <div class="controls__table-col controls__table-col-was">
-            <div class="controls__table-head">Было</div>
-            <div class="controls__table-col-body">
-              <div class="controls__table-content-item">
-                <p class="content__position">Бюджет:</p>
-                <p class="content__data">10 000₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Клики:</p>
-                <p class="content__data">100</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Заявок:</p>
-                <p class="content__data">10</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Цена заявки:</p>
-                <p class="content__data">100₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Конверсия в продажу:</p>
-                <p class="content__data">50%</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Цена клиента:</p>
-                <p class="content__data">200₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Средний чек:</p>
-                <p class="content__data">10 000₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Маржинальность:</p>
-                <p class="content__data">50%</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Окупаеость:</p>
-                <p class="content__data">2400%</p>
-              </div>
-            </div>
-          </div>
-          <div class="controls__table-col controls__table-col-became">
-            <div class="controls__table-head">Было</div>
-            <div class="controls__table-col-body">
-              <div class="controls__table-content-item">
-                <p class="content__position">Бюджет:</p>
-                <p class="content__data">10 000₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Клики:</p>
-                <p class="content__data">100</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Заявок:</p>
-                <p class="content__data">10</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Цена заявки:</p>
-                <p class="content__data">100₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Конверсия в продажу:</p>
-                <p class="content__data">50%</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Цена клиента:</p>
-                <p class="content__data">200₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Средний чек:</p>
-                <p class="content__data">10 000₽</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Маржинальность:</p>
-                <p class="content__data">50%</p>
-              </div>
-              <div class="controls__table-content-item">
-                <p class="content__position">Окупаемость:</p>
-                <p class="content__data">2400%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    
     <section class="get-offer" id="get-offer">
   <div class="container">
     <div class="get-offer__wrapper">
@@ -562,7 +447,6 @@
       <div class="header__menu">
         <nav class="header__nav">
           <a href="#" class="nav__link">Услуги</a>
-          <a href="#" class="nav__link">Кейсы</a>
           <a href="#" class="nav__link">О Нас</a>
           <a href="#" class="nav__link">Контакты</a>
         </nav>
@@ -572,7 +456,12 @@
         >
           <span>Показать телефон</span>
         </button>
-        <div class="mobile__menu"><span></span></div>
+        <nav class="mobile-menu">
+          <input type="checkbox" id="checkbox-footer" class="mobile-menu__checkbox" />
+          <label for="checkbox-footer" class="mobile-menu__btn" id="footer_menu"
+            ><div class="mobile-menu__icon"></div
+          ></label>
+        </nav>
       </div>
     </div>
     <p class="footer__copyright">© Santino & Co. 2020</p>
